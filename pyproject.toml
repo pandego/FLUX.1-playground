@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "flux1-playground"
+version = "0.1.0"
+description = "A playground for the new FLUX.1 models, for both inference and training LoRas."
+authors = ["pandego <7780875+pandego@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.4.0"
+torchvision = "^0.19.0"
+safetensors = "^0.4.4"
+diffusers = {git = "https://github.com/huggingface/diffusers.git"}
+transformers = "^4.44.2"
+lycoris-lora = "1.8.3"
+flatten-json = "^0.1.14"
+pyyaml = "^6.0.2"
+oyaml = "^1.0"
+tensorboard = "^2.17.1"
+kornia = "^0.7.3"
+invisible-watermark = "^0.2.0"
+einops = "^0.8.0"
+accelerate = "^0.33.0"
+toml = "^0.10.2"
+albumentations = "^1.4.14"
+pydantic = "^2.8.2"
+omegaconf = "^2.3.0"
+k-diffusion = "^0.1.1.post1"
+open-clip-torch = "^2.26.1"
+timm = "^1.0.8"
+prodigyopt = "^1.0"
+controlnet-aux = "0.0.7"
+python-dotenv = "^1.0.1"
+bitsandbytes = "^0.43.3"
+hf-transfer = "^0.1.8"
+lpips = "^0.1.4"
+pytorch-fid = "^0.3.0"
+optimum-quanto = "^0.2.4"
+sentencepiece = "^0.2.0"
+huggingface-hub = "^0.24.6"
+peft = "^0.12.0"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

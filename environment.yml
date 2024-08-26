@@ -1,0 +1,8 @@
+name: ai-toolkit
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=3.11
+  - pip:
+      - poetry==1.8.3
