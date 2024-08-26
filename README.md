@@ -36,10 +36,20 @@ Follow these steps to clone the repository, set up the environment, and start us
 
    ```bash
    git clone https://github.com/ostris/ai-toolkit.git
+   cd ai-toolkit
+   git submodule update --init --recursive
+   cd ..
    ```
 
-## WIP
+## Inference using FLUX.1 models
+
+   ```bash
+   cd ..
+   python run_flux_inference.py
+   ```
+
 ---
+## Training using [ai-toolkit](https://github.com/ostris/ai-toolkit)
 # WIP
 ---
 
