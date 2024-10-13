@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "flux-runpod-serverless"
+version = "0.1.0"
+description = "Just a text-to-image generator using Flux models and RunPod serverless framework"
+authors = ["Pandego <7780875+pandego@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+diffusers = {git = "https://github.com/huggingface/diffusers.git"}
+huggingface_hub = "*"
+sentencepiece = "*"
+bitsandbytes = "*"
+hf_transfer = "*"
+peft = "*"
+safetensors = "*"
+transformers = "*"
+accelerate = "*"
+protobuf = "^5.28.2"
+loguru = "*"
+runpod = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

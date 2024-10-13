@@ -7,6 +7,7 @@ from loguru import logger
 from transformers import BitsAndBytesConfig, QuantoConfig
 from datetime import datetime
 
+# TODO: Move all arguments to a json file
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Flux Image Generation Script")
@@ -183,7 +184,9 @@ def generate_images(pipe, args):
         generator=torch.Generator("cpu").manual_seed(seed),
     ).images[0]
 
-    output_path = f"{datetime.now().strftime('%Y%m%d_%HH%MM%SS')}_output_flux.{args.flux_version}_seed_{seed}.png"
+    output_folder = "output"
+    os.makedirs(output_folder, exist_ok=True)
+    output_path = f"{output_folder}/{datetime.now().strftime('%Y%m%d_%HH%MM%SS')}_output_flux.{args.flux_version}_seed_{seed}.png"
     output.save(output_path)
 
     logger.success(f"Saved image: '{output_path}'")
@@ -202,4 +205,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # TODO: Add an actual json file as input
     main()
