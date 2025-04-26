@@ -46,13 +46,13 @@ Follow these steps to clone the repository, set up the environment, and start us
    You can simply run the following command:
 
    ```bash
-   python run_flux_inference.py
+   python run_local.py
    ```
 
    For help with arguments use, simply run the `--help` flag:
 
    ```bash
-   python run_flux_inference.py --help
+   python run_local.py --help
    ```
 
 ---
